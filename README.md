@@ -29,7 +29,7 @@ To run the container listening on port 6640 (OVSDB) and 9001 (Supervisor XML-RPC
 
     sudo docker run -p 6640:6640 -p 9001:9001 --privileged=true -i -t davetucker/docker-ovs:2.1.2 /bin/sh
 
-> Note: You need the "tun" kernel module loaded to run this container
+> Note: You need the "tun" kernel module loaded to run this container, ex: sudo modprobe tun
 
 > Note: Change the tag for a different OVS version e.g davetucker/docker-ovs:2.0.0
 
